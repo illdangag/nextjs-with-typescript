@@ -1,3 +1,4 @@
+import styles from './index.css';
 import { NextPage, } from 'next';
 import Link from 'next/link';
 
@@ -13,7 +14,7 @@ type Props = {
 
 const WithInitialProps: NextPage<Props> = ({ items, pathname, }) => (
   <Layout title='Users List | Next.js + TypeScript Example'>
-    <h1>Users List</h1>
+    <h1 className={styles.title}>Users List</h1>
     <p>
       Example fetching data from inside <code>getInitialProps()</code>.
     </p>
